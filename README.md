@@ -1,8 +1,38 @@
-thuhole_analysis
-===========================
+# thuhole_analysis
 
-这个项目致力于两个目的：
+## :hugs: Brief Introduction
 
-* 基于python爬取清华大学匿名社交平台“新T树洞”的文本内容。
-* 基于机器学习对文本进行分类与分析。
+This project is dedicated to two purposes:：
 
+* Scraping text content from Tsinghua University's anonymous social platform "New T Treehole" using Python.
+* Classifying and analyzing the text using machine learning.
+
+## :boom: Re-Implementation
+
+### Step 1: Install Python and Related Python Libraries
+
+1. Install Python 
+2. Install Related Python Libraries
+
+    ```bash
+    pip install -r requirements_spider.txt
+    ```
+
+### Step 2: Retrieve Post Text
+
+**Input:**  
+
+* Username
+* Password
+* Starting Post ID
+* Ending Post ID
+
+**Output:** data/original_thuhole_texts
+
+**Command:**
+
+```bash
+python spider_thuhole.py
+```
+
+**Note:** You need to link your Tsinghua email (student email, staff email, or alumni email) to your GitHub account, and then log in to the website [https://new-t.github.io/](https://new-t.github.io/?) via GitHub. The username you enter is the linked email, and the password is your GitHub password. Since we are retrieving posts from the present to the past along a timeline, the starting post number must be **greater** than the ending post number.
