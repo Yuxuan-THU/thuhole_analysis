@@ -18,7 +18,7 @@ This project is dedicated to two purposes:：
     pip install -r requirements_spider.txt
     ```
 
-### Step 2: Retrieve Post Text
+### Step 2: Data collection: Retrieve Post Text
 
 **Command:**
 
@@ -39,7 +39,7 @@ python spider_thuhole.py
 
 **Note:** In the data/original_thuhole_texts/ folder, you will find multiple text files named in the format ××××××.txt, containing raw data from the specified start to end post IDs.
 
-### Step 3: Write the post content to the Excel file.
+### Step 3: Data structure: Write the post content to the Excel file.
 
 **Command:**
 
