@@ -1,0 +1,13 @@
+https://new-t.github.io/?##549983
+
+cs里面一些很简单但是力量很大的构造或者技术，比如rademacher complexity，information entropy，cnn这些东西，都是怎么想出来的呢，有没有办法得知这些人在创造这些概念时的intuition
+（9-27 13:57:23 9关注 3回复）
+
+【Alice】
+看看统计贝叶斯学派吧，一堆这种东西，发现的多了总结一下就高深了
+
+【Carol】
+这就是科技史的研究领域了吧
+
+【Dave】
+信息熵听名字就是物理的人搞出来的吧
