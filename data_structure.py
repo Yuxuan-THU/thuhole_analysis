@@ -250,10 +250,10 @@ def extract_and_save_to_excel(folder_path, output_excel):
 current_dir = os.path.dirname(__file__)
 
 # 输入文件夹的相对路径
-folder_path = os.path.join(current_dir, 'data', 'original_thuhole_texts')
+folder_path = os.path.join(current_dir, 'data_posts', 'original_thuhole_texts')
 
 # 输出的Excel文件路径
-output_excel = os.path.join(current_dir, 'data', 'original_extracted_texts.xlsx')
+output_excel = os.path.join(current_dir, 'data_posts', 'original_extracted_texts.xlsx')
 
 # 调用函数
 extract_and_save_to_excel(folder_path, output_excel)
