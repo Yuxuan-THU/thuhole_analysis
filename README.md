@@ -11,12 +11,11 @@ This project is dedicated to two purposes:
 
 ### Step 1: Install Python and Related Python Libraries
 
-1. Install Python 
-2. Install Related Python Libraries
+Install Related Python Libraries
 
-    ```bash
-    pip install -r requirements_spider.txt
-    ```
+```bash
+pip install -r requirements_spider.txt
+```
 
 ### Step 2: Data collection: Retrieve Post Text
 
@@ -37,9 +36,9 @@ python data_collect.py
 
 **Output:** 
 
-data/original_thuhole_texts
+data_posts/original_thuhole_texts
 
-**Note:** In the data/original_thuhole_texts/ folder, you will find multiple text files named in the format ××××××.txt, containing raw data from the specified start to end post IDs.
+**Note:** In the data_posts/original_thuhole_texts/ folder, you will find multiple text files named in the format ××××××.txt, containing raw data from the specified start to end post IDs.
 
 ### Step 3: Data structure: Write the post content to the Excel file
 
@@ -51,11 +50,15 @@ python data_structure.py
 
 **Input:**  
 
-data/original_thuhole_texts
+data_posts/original_thuhole_texts
+
+if you wish to use sample data：
+
+data_posts/original_thuhole_texts_example.xlsx
 
 **Output:** 
 
-data/original_extracted_texts.xlsx
+data_posts/original_extracted_texts.xlsx
 
 ### Step 4: Data mining: Train the models
 
@@ -76,7 +79,11 @@ conda install -c anaconda cudatoolkit=10.1.243 cudnn=7.6.5
 conda install cudatoolkit=10.0
 ```
 
-Install dependencies
+Install Related Python Libraries for machine learning
+
+```bash
+pip install -r requirements_ml.txt
+```
 
 ```bash
 python
@@ -85,11 +92,6 @@ import numpy as np
 import time
 print("TensorFlow version:", tf.__version__)
 print("GPU Available: ", tf.test.is_gpu_available())
-
-pip install pandas==0.23.4
-pip install keras==2.2.4
-pip install numpy==1.16.2
-pip install matplotlib==3.3.4
 ```
 
 Train the models
