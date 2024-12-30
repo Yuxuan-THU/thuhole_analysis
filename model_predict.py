@@ -20,7 +20,7 @@ f = lambda text: bert_model.encode([text])["encodes"][0]
 svc = joblib.load(os.path.join(current_dir, 'models', 'SVM.model'))
 
 # 获取 Excel 文件的路径
-input_excel_path = os.path.join(current_dir, 'data_texts', 'original_extracted_texts_example.xlsx')
+input_excel_path = os.path.join(current_dir, 'data_posts', 'original_extracted_texts_example.xlsx')
 print(f"读取的 Excel 文件路径: {input_excel_path}")
 
 # 读取 Excel 文件
