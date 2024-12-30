@@ -57,14 +57,72 @@ data/original_thuhole_texts
 
 data/original_extracted_texts.xlsx
 
-### Step 4: Data mining: Classify the post text
+### Step 4: Data mining: Train the models
 
+**Command:**
 
+Strong Recommendation: Create a Virtual Environment First.
 
+```bash
+conda create --name thuhole_analysis python=3.6
+conda activate thuhole_analysis
+```
 
+Set up a GPU environment
 
+```bash
+pip install --ignore-installed --upgrade -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==1.14.0
+conda install -c anaconda cudatoolkit=10.1.243 cudnn=7.6.5
+conda install cudatoolkit=10.0
+```
 
+Install dependencies
 
+```bash
+python
+import tensorflow as tf
+import numpy as np
+import time
+print("TensorFlow version:", tf.__version__)
+print("GPU Available: ", tf.test.is_gpu_available())
 
+pip install pandas==0.23.4
+pip install keras==2.2.4
+pip install numpy==1.16.2
+pip install matplotlib==3.3.4
+```
 
+Train the models
+
+```bash
+python model_train.py
+```
+
+**Input:**  
+
+* data_labeled_for_ml/train.txt
+* data_labeled_for_ml/test.txt
+
+**Output:**  
+
+* models/LR.model
+* models/NB.model
+* models/SVM.model
+
+### Step 4: Data mining: Make predictions with SVM
+
+**Command:**
+
+```bash
+python model_predict.py
+```
+
+**Input:**  
+
+* models/SVM.model
+* data_posts/original_extracted_texts_example.xlsx
+
+**Output:**  
+
+* coded_original_extracted_texts.xlsx
 
