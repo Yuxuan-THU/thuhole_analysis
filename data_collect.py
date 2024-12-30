@@ -21,6 +21,18 @@ def crawl_posts_to_txt(username, password, start_num, end_num, wait_time=5):
     data_dir = os.path.join(script_dir, "data_posts")
     output_dir = os.path.join(data_dir, "original_thuhole_texts")
 
+    # 如果 'data_posts' 文件夹不存在，则自动创建
+    if not os.path.exists(data_dir):
+        os.makedirs(data_dir)
+        print(f"文件夹 'data_posts' 已创建：{data_dir}")
+
+    # 如果 'original_thuhole_texts' 文件夹不存在，则自动创建
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+        print(f"文件夹 'original_thuhole_texts' 已创建：{output_dir}")
+    else:
+        print(f"文件夹 'original_thuhole_texts' 已存在：{output_dir}")
+
     # 设置 Chrome 配置
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # 在无界面模式下运行
