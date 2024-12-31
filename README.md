@@ -40,7 +40,7 @@ data_posts/original_thuhole_texts
 
 **Note:** In the data_posts/original_thuhole_texts/ folder, you will find multiple text files named in the format ××××××.txt, containing raw data from the specified start to end post IDs.
 
-### Step 3: Data structure: Write the post content to the Excel file
+### Step 3: Data Structure: Write the Post Content to the Excel File
 
 **Command:**
 
@@ -60,7 +60,7 @@ data_posts/original_thuhole_texts_example.xlsx
 
 data_posts/original_extracted_texts.xlsx
 
-### Step 4: Data mining: Train the models
+### Step 4: Data Mining: Train the Models
 
 **Command:**
 
@@ -85,15 +85,6 @@ Install Related Python Libraries for machine learning
 pip install -r requirements_ml.txt
 ```
 
-```bash
-python
-import tensorflow as tf
-import numpy as np
-import time
-print("TensorFlow version:", tf.__version__)
-print("GPU Available: ", tf.test.is_gpu_available())
-```
-
 Train the models
 
 ```bash
@@ -111,7 +102,7 @@ python model_train.py
 * models/NB.model
 * models/SVM.model
 
-### Step 4: Data mining: Make predictions with SVM
+### Step 4: Data Mining: Make Predictions with SVM Model
 
 **Command:**
 
