@@ -96,7 +96,7 @@ def main():
     test_file_path = os.path.join(current_dir, 'data_labeled_for_ml', 'test.txt')
 
     # 输出模型的路径 (根目录下的 models 文件夹)
-    output_dir = os.path.join(current_dir, 'ml_models')
+    output_dir = os.path.join(current_dir, 'models')
     # 如果模型文件夹不存在，则创建它
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
