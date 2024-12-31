@@ -14,15 +14,16 @@ This project is dedicated to two purposes:
 Clone this Repository
 
 ```bash
-git clone 
+git clone https://github.com/Yuxuan-THU/thuhole_analysis.git
 ```
 
-
-Install Related Python Libraries
+Install Related Python Libraries for Web Scraping Scrip
 
 ```bash
 pip install -r requirements_spider.txt
 ```
+
+**Note:** To successfully install Python packages, you may need to disable the network proxy.
 
 ### Step 2: Data collection: Retrieve Post Text
 
