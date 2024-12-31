@@ -129,5 +129,5 @@ python model_predict.py
 
 * coded_original_extracted_texts.xlsx
 
-**Note:** The script will take approximately 3 minutes to run.
+**Note:** The script will take approximately 6 minutes to run.
 
