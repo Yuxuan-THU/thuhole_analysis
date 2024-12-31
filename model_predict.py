@@ -66,7 +66,7 @@ predictions = [predict_text(text) for text in tqdm(df["full_texts"], desc="预�
 df['code'] = predictions
 
 # 输出为新的 Excel 文件
-output_excel_path = os.path.join(current_dir, 'data_texts', "编码结果_with_predictions.xlsx")
+output_excel_path = os.path.join(current_dir, 'data_posts', "predictions_of_extracted_texts_example.xlsx")
 df.to_excel(output_excel_path, index=False)
 
 print(f"修改后的 Excel 文件已输出: {output_excel_path}")
