@@ -9,7 +9,14 @@ This project is dedicated to two purposes:
 
 ## :boom: Re-Implementation
 
-### Step 1: Install Python and Related Python Libraries
+### Step 1: Clone this Repository and Install Related Python Libraries
+
+Clone this Repository
+
+```bash
+git clone 
+```
+
 
 Install Related Python Libraries
 
