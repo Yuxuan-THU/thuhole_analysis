@@ -91,6 +91,7 @@ Install Related Python Libraries for machine learning
 
 ```bash
 pip install -r requirements_ml.txt
+pip install --upgrade pandas openpyxl
 ```
 
 Train the models
@@ -106,6 +107,7 @@ python model_train.py
 
 **Output:**  
 
+* tmp_graph11
 * models/LR.model
 * models/NB.model
 * models/SVM.model
@@ -126,4 +128,6 @@ python model_predict.py
 **Output:**  
 
 * coded_original_extracted_texts.xlsx
+
+**Note:** The script will take approximately 3 minutes to run.
 
